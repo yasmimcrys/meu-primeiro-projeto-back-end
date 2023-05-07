@@ -16,7 +16,7 @@ async function mostraMulheres(request, response) {
     try{
       const mulheresVindasDoBancoDeDados = await Mulher.find()
 
-      response.jason(mulheresVindasDoBancoDeDados)
+      response.json(mulheresVindasDoBancoDeDados)
     }catch (erro) {
          console.log(erro)
     }
